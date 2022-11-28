@@ -17,10 +17,10 @@ docker run -p 8000:8000 aluxion
 
 == GET Requests
 
-#IMPORTANT!!!!#: When writing artist or album names:
+IMPORTANT: When writing artist or album names:
 
-* SPACES must be written as UNDERSCOREs ('_'): Black Sabbath as Black_Sabbath
-* SLASHES ('/') must be written as SCORES ('-'): AC/DC as AC-DC
+* SPACES must be written as UNDERSCOREs ('pass:[_]'): _Black Sabbath as Black_Sabbath_
+* SLASHES ('/') must be written as SCORES ('-'): _AC/DC as AC-DC_
 
 
 === 1. GET All Artists
