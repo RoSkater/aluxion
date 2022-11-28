@@ -1,0 +1,39 @@
+= Aluxion API Instructions
+
+== Running the Application
+
+* Make sure you have Docker installed in your OS
+
+* Build the Docker Container with the following command:
+[source] 
+docker build -t aluxion .
+
+* Run the Docker container in port 8000:
+[source]
+docker run -p 8000:8000 aluxion
+
+* Application will be available as localhost:8000
+
+
+== GET Requests
+
+#IMPORTANT!!!!#: When writing artist or album names:
+
+* SPACES must be written as UNDERSCOREs ('_'): Black Sabbath as Black_Sabbath
+* SLASHES ('/') must be written as SCORES ('-'): AC/DC as AC-DC
+
+
+=== 1. GET All Artists
+GET request to endpoint: http://localhost:8000/api/artists
+
+=== 2. GET All Albums with Tracks
+GET request to endpoint: http://localhost:8000/api/albums
+
+=== 3. GET Album List of a Given Artist
+GET request to endpoint: http://localhost:8000/api/artists/#{artist_name}#
+
+=== 4. GET Track List of a Given Album
+GET request to endpoint: http://localhost:8000/api/albums/#{album_name}#
+
+=== 5. GET All Albums with Artist & Number of Tracks
+GET request to endpoint: http://localhost:8000/api/album_artist
