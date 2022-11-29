@@ -19,7 +19,7 @@ docker run -p 8000:8000 aluxion
 
 IMPORTANT: When writing artist or album names:
 
-* SPACES must be written as UNDERSCOREs ('pass:[_]'): _Black Sabbath as Black_Sabbath_
+* SPACES must be written as UNDERSCORES ('pass:[_]'): _Black Sabbath as Black_Sabbath_
 * SLASHES ('/') must be written as SCORES ('-'): _AC/DC as AC-DC_
 
 
