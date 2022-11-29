@@ -68,7 +68,7 @@ class AlbumTracksView(View):
             
         return JsonResponse(getAlbumwithTracks(albums, tracks))
 
-class AlbumArtistTracks(View):
+class AlbumArtistTracksView(View):
     def get(self, request):
         albums = list(Albums.objects.values())
         tracks = list(Tracks.objects.values())
